@@ -29,7 +29,9 @@
 ## Установка
 
 ####1. Установить зависимости из requirements.txt
-> pip install -r requirements.txt 
+```bash
+pip install -r requirements.txt 
+```
 
 #### 2. Установка docker и docker-compose
 
