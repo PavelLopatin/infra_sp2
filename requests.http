@@ -1,0 +1,40 @@
+###
+POST http://127.0.0.1:8000/api/v1/auth/email
+Content-Type: application/json
+
+{    
+    "email": "test2@yandex.ru"
+}
+###
+
+POST http://127.0.0.1:8000/api/v1/auth/token
+Content-Type: application/json
+
+{
+    "email": "test2@yandex.ru",
+    "confirm_code": "5r8-b645a8ba4f1f0e3a4e54"
+}
+###
+
+POST http://127.0.0.1:8000/api/v1/auth/email
+Content-Type: application/json
+
+{    
+    "email": "admin2@yamdb.fake"
+}
+###
+
+POST http://127.0.0.1:8000/api/v1/auth/token
+Content-Type: application/json
+
+{
+    "email": "admin2@yamdb.fake",
+    "confirmation_code": "5r9-cda1c505063fb88ca1f0"
+}
+
+###
+GET http://127.0.0.1:8000/users
+{
+
+}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyOTY2ODgwLCJqdGkiOiIwYWYwN2ExNjc0NWI0Yjg0OTY1NDRlNDlkYjcwYzUxYiIsInVzZXJfaWQiOjV9.8Ojh_7aRSesF02ByneGIlsgesh5HPnqAWv_CgzvGOlE
