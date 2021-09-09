@@ -24,20 +24,38 @@
 
 * Активировать виртуальное окружение
 
-* Установить зависимости из requirements.txt
+
+
+## Установка
+
+####1. Установить зависимости из requirements.txt
 > pip install -r requirements.txt 
 
-* Установить simplejwt
-> pip install djangorestframework-simplejwt
+#### 2. Установка docker и docker-compose
 
-* Установить corsheaders
-> pip install django-cors-headers
+Если у вас уже установлены docker и docker-compose, этот шаг можно пропустить, иначе можно воспользоваться официальной [инструкцией](https://docs.docker.com/engine/install/).
 
-* Установить django-filter
-> pip install django-filter
+#### 3. Запуск контейнера
+```bash
+docker-compose up
+```
+### 4. Выключение контейнера
+```bash
+docker-compose down
+```
 
-* Запустить сервер
-> python manage.py runserver
+
+## Использование
+#### Создание суперпользователя Django
+```bash
+docker-compose run web python manage.py createsuperuser
+```
+
+#### Пример инициализации стартовых данных:
+```bash
+docker-compose run web python manage.py loaddata fixtures.json
+```
 
 
-#### Запросы
+#### Работа с api
+Документация ко всем ручкам описана в redoc
